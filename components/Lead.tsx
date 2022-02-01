@@ -25,7 +25,7 @@ const Lead = (): JSX.Element => (
     </div>
     <div className="grid w-full grid-flow-col auto-rows-max grid-rows-3 bg-slate-100 text-stone-800">
       <div className="m-auto mr-10 mt-10 flex space-x-4 ">
-        <a href="/contact">
+        <a href="#contact">
           <Mail />
         </a>
         <a
