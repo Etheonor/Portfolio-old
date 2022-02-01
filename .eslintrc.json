@@ -8,9 +8,7 @@
     "extends": [
         "next",
         "next/core-web-vitals",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:sonarjs/recommended",
-        "plugin:unicorn/recommended"
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
     "parserOptions": {
         "project": [
@@ -30,8 +28,7 @@
         "@typescript-eslint",
         "cypress",
         "simple-import-sort",
-        "prettier",
-        "sonarjs"
+        "prettier"
     ],
     "rules": {
         "no-console": "off",
@@ -70,17 +67,6 @@
                 "allowTypedFunctionExpressions": true,
                 "allowHigherOrderFunctions": true,
                 "allowConciseArrowFunctionExpressionsStartingWithVoid": true
-            }
-        ],
-        "unicorn/no-null": "off",
-        "unicorn/filename-case": [
-            "error",
-            {
-                "cases": {
-                    "camelCase": true,
-                    "pascalCase": true,
-                    "kebabCase": true
-                }
             }
         ]
     },

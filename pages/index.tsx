@@ -4,13 +4,13 @@ You can also update the content on the Landing.js component
 */
 
 import Head from 'next/head';
-import Landing from 'components/Landing';
-import Layout from 'components/Layout';
+import Lead from 'components/Lead';
+import Project from 'components/Project';
 
 const Home = (): JSX.Element => (
   <>
     <Head>
-      <title>Welcome to SupaNexTail</title>
+      <title>My Portfolio</title>
       <meta
         name="description"
         content="SupaNexTail is a boilerplate for your SaaS, based on Next.js, Supabase, and TailwindCSS"
@@ -46,9 +46,45 @@ const Home = (): JSX.Element => (
       <meta charSet="UTF-8" />
     </Head>
 
-    <Layout>
-      <Landing />
-    </Layout>
+    <>
+      <Lead />
+      <Project
+        project="Multy"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Duis a sagittis lorem, ut porta libero. Etiam congue cursus ornare. 
+  Ut enim felis, venenatis ac porta pellentesque, finibus pellentesque ante. 
+  Donec euismod malesuada tortor, at efficitur dolor. Interdum et malesuada 
+  fames ac ante ipsum primis in faucibus. Sed erat nisl, egestas vitae tortor elementum, 
+  dignissim vestibulum metus. Proin sodales blandit eleifend. Nunc posuere dui ut suscipit interdum."
+        image="/images/multy.png"
+        link="https://www.multy.me"
+        bg="dark"
+      />
+      <Project
+        project="SupaNexTail"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Duis a sagittis lorem, ut porta libero. Etiam congue cursus ornare. 
+      Ut enim felis, venenatis ac porta pellentesque, finibus pellentesque ante. 
+      Donec euismod malesuada tortor, at efficitur dolor. Interdum et malesuada 
+      fames ac ante ipsum primis in faucibus. Sed erat nisl, egestas vitae tortor elementum, 
+      dignissim vestibulum metus. Proin sodales blandit eleifend. Nunc posuere dui ut suscipit interdum."
+        image="/images/supanextail.png"
+        link="https://www.supanextail.dev"
+        bg="light"
+      />
+      <Project
+        project="Travelogue"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Duis a sagittis lorem, ut porta libero. Etiam congue cursus ornare. 
+      Ut enim felis, venenatis ac porta pellentesque, finibus pellentesque ante. 
+      Donec euismod malesuada tortor, at efficitur dolor. Interdum et malesuada 
+      fames ac ante ipsum primis in faucibus. Sed erat nisl, egestas vitae tortor elementum, 
+      dignissim vestibulum metus. Proin sodales blandit eleifend. Nunc posuere dui ut suscipit interdum."
+        image="/images/travelogue.png"
+        link="https://www.travelogue.earth"
+        bg="dark"
+      />
+    </>
   </>
 );
 export default Home;
