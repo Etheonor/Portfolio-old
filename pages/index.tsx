@@ -3,9 +3,11 @@ Don't forget to modify the Head component with your website informations
 You can also update the content on the Landing.js component
 */
 
+import Contact from 'components/Contact';
 import Head from 'next/head';
 import Lead from 'components/Lead';
 import Project from 'components/Project';
+import { ToastContainer } from 'react-toastify';
 
 const Home = (): JSX.Element => (
   <>
@@ -84,6 +86,8 @@ const Home = (): JSX.Element => (
         link="https://www.travelogue.earth"
         bg="dark"
       />
+      <Contact />
+      <ToastContainer position="bottom-center" />
     </>
   </>
 );
