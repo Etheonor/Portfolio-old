@@ -14,7 +14,7 @@ const Lead = (): JSX.Element => (
             alt="an arrow"
             className="m-auto mt-14 mb-5 w-28 md:w-32 lg:mt-16 xl:mt-20"
           />
-          <p className="max-w-xl px-5 text-center md:leading-relaxed lg:px-0">
+          <p className="max-w-xl px-5 text-center md:leading-relaxed">
             I’m <span className="text-amber-500">Michael</span>, a web developer
             available to work with you on your next awesome website.
           </p>
@@ -52,7 +52,7 @@ const Lead = (): JSX.Element => (
         <img
           src="/images/arrow-down.svg"
           alt="an arrow"
-          className="m-auto mt-0 w-10"
+          className="m-auto mt-0 w-10 animate-bounce"
         />
       </div>
     </div>

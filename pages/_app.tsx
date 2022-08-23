@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           type: 'website',
           locale: 'en_IE',
           url: '',
-          site_name: 'Supanextail',
+          site_name: 'Michael Breyton | Portfolio',
         }}
         twitter={{
           handle: '@michael_webdev',

@@ -21,13 +21,15 @@ const Project = (props: ProjectProps): JSX.Element => (
       <div className="m-auto">
         <div className="m-auto font-body text-base md:text-xl xl:text-2xl">
           <div className="flex flex-col max-w-md">
-            <h2 className="m-auto text-7xl font-title">{props.project}</h2>
+            <h2 className="text-5xl xl:text-7xl 2xl:text-9xl m-auto font-title">
+              {props.project}
+            </h2>
             <div
-              className={`h-24 border-l relative left-1/2 my-5 ${
+              className={`h-24 border-l m-auto left-1/2 my-5 ${
                 props.bg === 'dark' ? 'border-slate-100' : 'border-stone-900'
               }`}
             />
-            <p className="max-w-xl px-5 text-center md:leading-relaxed lg:px-0 text-xs">
+            <p className="max-w-xl px-5 text-center md:leading-relaxed lg:px-0 2xl:text-base xl:text-sm text-xs">
               {props.description}
             </p>
           </div>
@@ -35,7 +37,7 @@ const Project = (props: ProjectProps): JSX.Element => (
       </div>
     </div>
     <div className="m-auto">
-      <div className="m-auto max-w-lg p-5">
+      <div className="m-auto 2xl:max-w-4xl xl:max-w-2xl max-w-xl p-5">
         <img
           src={props.image}
           alt="Multy website presentation"
@@ -47,7 +49,7 @@ const Project = (props: ProjectProps): JSX.Element => (
             href={props.link}
             target="_blank"
             className={`text-lg tracking-widest transition duration-200 ease-in-out
-          hover:text-amber-500`}
+          hover:text-amber-500 link 2xl:text-xl`}
             rel="noreferrer">
             {props.link}
           </a>

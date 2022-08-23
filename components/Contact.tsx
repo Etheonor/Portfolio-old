@@ -60,8 +60,10 @@ const sendEmail = async (): Promise<void> => {
 };
 const Contact = (): JSX.Element => {
   return (
-    <section id="contact" className={`h-screen flex flex-col`}>
-      <h2 className="text-7xl font-title text-center pt-16">Contact Me</h2>
+    <section id="contact" className={`h-screen flex flex-col p-5`}>
+      <h2 className="text-5xl xl:text-7xl font-title text-center pt-16">
+        Contact Me
+      </h2>
       <p className="mt-5 mx-auto text-lg max-w-md text-center">
         Want to create a website with me? Don't hesitate to send me a message, I
         look forward to working with you!
@@ -73,7 +75,7 @@ const Contact = (): JSX.Element => {
         }}
         action="/api/contact"
         method="post"
-        className="flex my-auto flex-row flex-wrap justify-evenly text-2xl font-body">
+        className="flex my-auto flex-row flex-wrap justify-evenly text-xl font-body">
         <div className="w-96 flex flex-col justify-start">
           <div className="mb-10 flex flex-col">
             <label htmlFor="name" className="mb-3">
@@ -83,7 +85,7 @@ const Contact = (): JSX.Element => {
               type="text"
               id="name"
               name="name"
-              className="shadow-lg h-12"
+              className="shadow-lg h-12 px-2"
             />
           </div>
           <div className="mb-10 flex flex-col">
@@ -94,7 +96,7 @@ const Contact = (): JSX.Element => {
               type="email"
               id="email"
               name="email"
-              className="shadow-lg h-12"
+              className="shadow-lg h-12 px-2"
             />
           </div>
         </div>
@@ -108,7 +110,7 @@ const Contact = (): JSX.Element => {
               name="message"
               rows={5}
               cols={35}
-              className="shadow-lg"
+              className="shadow-lg p-2"
             />
           </div>
           <div className="button w-full">
