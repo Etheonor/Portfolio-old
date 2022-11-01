@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       <DefaultSeo
         openGraph={{
           type: 'website',
-          locale: 'en_IE',
+          locale: 'en_EN',
           url: '',
           site_name: 'Michael Breyton | Portfolio',
         }}

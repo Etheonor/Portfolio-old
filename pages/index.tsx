@@ -20,70 +20,76 @@ type projects = {
 
 const myProjects = projects as projects;
 
-const Home = (): JSX.Element => (
-  <>
-    <Head>
-      <title>Michael Breyton | Portfolio</title>
-      <meta
-        name="description"
-        content="This is my portfolio, 
-        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
-      />
-
-      <meta property="og:url" content="https://michaelbreyton.dev/" />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:title"
-        content="This is my portfolio, 
-        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
-      />
-      <meta
-        property="og:description"
-        content="This is my portfolio, 
-        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
-      />
-      <meta
-        property="og:image"
-        content="https://michaelbreyton.dev/ogimage.png"
-      />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="michaelbreyton.dev" />
-      <meta
-        property="twitter:url"
-        content="https://michaelbreyton.dev/ogimage.png"
-      />
-      <meta name="twitter:title" content="Michael Breyton | Portfolio" />
-      <meta
-        name="twitter:description"
-        content="This is my portfolio, 
-        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
-      />
-      <meta
-        name="twitter:image"
-        content="https://michaelbreyton.dev/ogimage.png"
-      />
-      <meta charSet="UTF-8" />
-    </Head>
-
+const Home = (): JSX.Element => {
+  return (
     <>
-      <Lead />
-      {myProjects.map((el, index) => {
-        return (
-          <Project
-            key={index}
-            project={el.name}
-            description={el.description}
-            image={el.image}
-            link={el.link}
-            bg={el.bg}
-          />
-        );
-      })}
+      <Head>
+        <title>Michael Breyton | Portfolio</title>
+        <meta
+          name="description"
+          content="This is my portfolio, 
+        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
+        />
 
-      <Contact />
-      <ToastContainer position="bottom-center" />
+        <meta property="og:url" content="https://michaelbreyton.dev/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="This is my portfolio, 
+        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
+        />
+        <meta
+          property="og:description"
+          content="This is my portfolio, 
+        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
+        />
+        <meta
+          property="og:image"
+          content="https://michaelbreyton.dev/ogimage.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="michaelbreyton.dev" />
+        <meta
+          property="twitter:url"
+          content="https://michaelbreyton.dev/ogimage.png"
+        />
+        <meta name="twitter:title" content="Michael Breyton | Portfolio" />
+        <meta
+          name="twitter:description"
+          content="This is my portfolio, 
+        I worked in the video game industry for 10 years, and now the joys of web development are mine!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://michaelbreyton.dev/ogimage.png"
+        />
+        <meta charSet="UTF-8" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
+      </Head>
+
+      <>
+        <Lead />
+        {myProjects.map((el, index) => {
+          return (
+            <Project
+              key={index}
+              project={el.name}
+              description={el.description}
+              image={el.image}
+              link={el.link}
+              bg={el.bg}
+            />
+          );
+        })}
+
+        <Contact />
+        <ToastContainer position="bottom-center" />
+      </>
     </>
-  </>
-);
+  );
+};
+
 export default Home;

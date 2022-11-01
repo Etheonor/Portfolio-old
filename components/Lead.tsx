@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
-import Linkedin from 'components/UI/Linkedin';
-import Mail from 'components/UI/Mail';
-import Twitter from 'components/UI/Twitter';
+import { Mail, Twitter, Linkedin } from 'lucide-react';
 
 const Lead = (): JSX.Element => (
   <section className="flex h-screen flex-row">
@@ -26,21 +23,29 @@ const Lead = (): JSX.Element => (
     <div className="grid w-full grid-flow-col auto-rows-max grid-rows-3 bg-slate-100 text-stone-800">
       <div className="m-auto mr-10 mt-10 flex space-x-4 ">
         <a href="#contact">
-          <Mail />
+          <Mail
+            className="transition duration-200 ease-in-out
+          hover:text-amber-500"
+          />
         </a>
         <a
           href="https://www.twitter.com/michael_webdev"
           target="_blank"
           rel="noreferrer">
-          <Twitter />
+          <Twitter
+            className="transition duration-200 ease-in-out
+          hover:text-amber-500"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/micha%C3%ABl-breyton-a88aa146/"
           target="_blank"
-          className="fill-stone-800 transition duration-200 ease-in-out
-          hover:fill-amber-500"
+          className=""
           rel="noreferrer">
-          <Linkedin />
+          <Linkedin
+            className="transition duration-200 ease-in-out
+          hover:text-amber-500"
+          />
         </a>
       </div>
       <p className="m-auto font-title text-big font-bold sm:ml-5">I</p>

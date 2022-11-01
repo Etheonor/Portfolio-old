@@ -4,6 +4,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import 'react-toastify/dist/ReactToastify.css';
+import { Send } from 'lucide-react';
 
 import axios, { AxiosError } from 'axios';
 
@@ -117,7 +118,7 @@ const Contact = (): JSX.Element => {
             <button
               type="submit"
               className="m-auto mr-0 flex bg-stone-700 text-slate-100 px-4 py-2 text-base rounded-md hover:bg-stone-900 hover:text-slate-50 transition-all">
-              ✉ SEND
+              <Send size={16} className="m-auto mr-2" /> SEND
             </button>
           </div>
         </div>
