@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { Link } from 'lucide-react';
+import { Fade, Zoom } from 'react-awesome-reveal';
 
 interface ProjectProps {
   bg: string;
@@ -22,24 +23,32 @@ const Project = (props: ProjectProps): JSX.Element => {
         <div className="m-auto">
           <div className="m-auto font-body text-base md:text-xl xl:text-2xl">
             <div className="flex flex-col flex-grow: 1">
-              <h2 className="text-5xl xl:text-7xl 2xl:text-9xl m-auto font-title">
-                {props.project}
-              </h2>
-
-              <div
+              <Zoom
+                fraction={0.8}
+                triggerOnce={true}
+                className="text-5xl xl:text-7xl 2xl:text-9xl m-auto font-title">
+                <h2>{props.project}</h2>
+              </Zoom>
+              <Fade
+                fraction={0.8}
+                triggerOnce={true}
                 className={`h-24 border-l m-auto left-1/2 my-5 ${
                   props.bg === 'dark' ? 'border-slate-100' : 'border-stone-900'
-                }`}
-              />
+                }`}>
+                <div />
+              </Fade>
 
-              <p className="max-w-md px-5 text-center md:leading-relaxed lg:px-0 2xl:text-base xl:text-sm text-xs m-auto">
-                {props.description}
-              </p>
+              <Zoom fraction={0.8} triggerOnce={true}>
+                <p className="max-w-md px-5 text-center md:leading-relaxed lg:px-0 2xl:text-base xl:text-sm text-xs m-auto">
+                  {props.description}
+                </p>
+              </Zoom>
             </div>
           </div>
         </div>
       </div>
-      <div className="m-auto">
+
+      <Fade fraction={0.8} triggerOnce={true} className="m-auto">
         <div className="m-auto 2xl:max-w-4xl xl:max-w-2xl max-w-xl p-5">
           <img
             src={props.image}
@@ -58,7 +67,7 @@ const Project = (props: ProjectProps): JSX.Element => {
             </a>
           </div>
         </div>
-      </div>
+      </Fade>
     </section>
   );
 };
