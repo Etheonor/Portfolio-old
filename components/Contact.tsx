@@ -62,7 +62,7 @@ const sendEmail = async (): Promise<void> => {
 const Contact = (): JSX.Element => {
   return (
     <section id="contact" className={`h-screen flex flex-col p-5`}>
-      <h2 className="text-5xl xl:text-7xl font-title text-center pt-16">
+      <h2 className="text-5xl xl:text-7xl font-title font-black text-center pt-16">
         Contact Me
       </h2>
       <p className="mt-5 mx-auto text-lg max-w-md text-center">

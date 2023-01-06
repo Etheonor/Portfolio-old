@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ['Alegreya Sans', 'sans-serif'],
-        body: ['Imprima', 'sans-serif'],
+        title: ['Mosk', 'sans-serif'],
+        body: ['Nunito', 'sans-serif'],
       },
       fontSize: {
         big: '13rem',

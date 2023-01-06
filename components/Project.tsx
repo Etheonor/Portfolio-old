@@ -19,14 +19,14 @@ const Project = (props: ProjectProps): JSX.Element => {
           ? 'bg-stone-800 text-slate-100'
           : 'bg-slate-100 text-stone-800'
       }`}>
-      <div className="flex flex-col m-auto p-8 lg:p-0 ">
-        <div className="m-auto">
+      <div className="flex flex-col m-auto">
+        <div className="m-auto p-8">
           <div className="m-auto font-body text-base md:text-xl xl:text-2xl">
             <div className="flex flex-col flex-grow: 1">
               <Zoom
                 fraction={0.8}
                 triggerOnce={true}
-                className="text-5xl xl:text-7xl 2xl:text-9xl m-auto font-title">
+                className="text-5xl xl:text-7xl 2xl:text-9xl m-auto font-title font-extrabold">
                 <h2>{props.project}</h2>
               </Zoom>
               <Fade
@@ -39,7 +39,7 @@ const Project = (props: ProjectProps): JSX.Element => {
               </Fade>
 
               <Zoom fraction={0.8} triggerOnce={true}>
-                <p className="max-w-md px-5 text-center md:leading-relaxed lg:px-0 2xl:text-base xl:text-sm text-xs m-auto">
+                <p className="max-w-2xl lg:px-0 px-5 m-auto font-light tracking-wide leading-relaxed">
                   {props.description}
                 </p>
               </Zoom>
@@ -60,8 +60,8 @@ const Project = (props: ProjectProps): JSX.Element => {
             <a
               href={props.link}
               target="_blank"
-              className={`text-lg tracking-widest transition duration-200 ease-in-out
-          hover:text-amber-500 link 2xl:text-xl`}
+              className={`tracking-widest transition duration-200 ease-in-out
+          hover:text-amber-500 lg:text-2xl font-body`}
               rel="noreferrer">
               {props.link}
             </a>

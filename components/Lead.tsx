@@ -16,7 +16,7 @@ const Lead = (): JSX.Element => (
             available to work with you on your next awesome website.
           </p>
         </div>
-        <p className="m-auto font-title text-big font-bold  sm:mr-5">H</p>
+        <p className="m-auto font-title text-big font-black sm:mr-5">H</p>
         <div className="m-auto" />
       </div>
     </div>
@@ -48,7 +48,7 @@ const Lead = (): JSX.Element => (
           />
         </a>
       </div>
-      <p className="m-auto font-title text-big font-bold sm:ml-5">I</p>
+      <p className="m-auto font-title text-big font-black sm:ml-5">I</p>
       <div className="m-auto flex flex-col px-5 text-center">
         <div className="m-auto mb-5 max-w-xl px-5 text-center font-body text-base md:text-xl lg:px-0 xl:text-2xl">
           <p>Want to see some of my projects?</p>
