@@ -12,7 +12,7 @@ import sgMail from '@sendgrid/mail';
 
 interface Request extends NextApiRequest {
   body: {
-    name: string;
+    subject: string;
     email: string;
     message: string;
   };
@@ -33,19 +33,17 @@ const sendGrid = async (
   if (request.method === 'POST') {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    console.log(request.body);
 
     const message = {
       to: 'mail@michaelbreyton.dev', // Change to your recipient
       from: 'michael@supanextail.dev', // Change to your verified sender
-      subject: `Portfolio | New message from ${request.body.name}`,
+      subject: request.body.subject,
       text: request.body.message,
       reply_to: request.body.email,
     };
 
     try {
       const result = await sgMail.send(message);
-      console.log(result);
       if (result) {
         response.status(200).json({
           message:

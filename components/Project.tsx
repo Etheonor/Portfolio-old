@@ -16,8 +16,8 @@ const Project = (props: ProjectProps): JSX.Element => {
     <section
       className={`flex lg:h-screen flex-row flex-wrap ${
         props.bg === 'dark'
-          ? 'bg-stone-800 text-slate-100'
-          : 'bg-slate-100 text-stone-800'
+          ? 'bg-emerald-800 text-emerald-200'
+          : 'bg-emerald-200 text-emerald-800'
       }`}>
       <div className="flex flex-col m-auto">
         <div className="m-auto p-8">
@@ -26,14 +26,16 @@ const Project = (props: ProjectProps): JSX.Element => {
               <Zoom
                 fraction={0.8}
                 triggerOnce={true}
-                className="text-5xl xl:text-7xl 2xl:text-9xl m-auto font-title font-extrabold">
+                className="drop-shadow-title text-5xl xl:text-7xl 2xl:text-9xl m-auto font-title font-extrabold">
                 <h2>{props.project}</h2>
               </Zoom>
               <Fade
                 fraction={0.8}
                 triggerOnce={true}
                 className={`h-24 border-l m-auto left-1/2 my-5 ${
-                  props.bg === 'dark' ? 'border-slate-100' : 'border-stone-900'
+                  props.bg === 'dark'
+                    ? 'border-emerald-200'
+                    : 'border-emerald-800'
                 }`}>
                 <div />
               </Fade>
@@ -55,7 +57,7 @@ const Project = (props: ProjectProps): JSX.Element => {
             alt="Website presentation"
             className="shadow-md rounded-md"
           />
-          <div className="flex mt-5">
+          <div className="flex mt-7 mb-5">
             <Link className="mr-2" />
             <a
               href={props.link}

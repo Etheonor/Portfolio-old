@@ -10,7 +10,10 @@ module.exports = {
         body: ['Nunito', 'sans-serif'],
       },
       fontSize: {
-        big: '13rem',
+        big: '18rem',
+      },
+      dropShadow: {
+        title: '0px 4px 4px rgba(0, 0, 0, 0.3)',
       },
     },
   },
