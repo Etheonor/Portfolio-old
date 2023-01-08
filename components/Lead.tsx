@@ -28,7 +28,7 @@ const Lead = (): JSX.Element => (
     </div>
     <div className="grid w-full grid-flow-col auto-rows-max grid-rows-3 bg-emerald-200 text-emerald-800">
       <div className="m-auto mr-10 mt-10 flex space-x-4 ">
-        <a href="#contact">
+        <a href="#contact" aria-label="Contact me">
           <Mail
             className="transition duration-200 ease-in-out
           hover:text-amber-500"
@@ -37,7 +37,8 @@ const Lead = (): JSX.Element => (
         <a
           href="https://www.twitter.com/michael_webdev"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+          aria-label="My Twitter profile">
           <Twitter
             className="transition duration-200 ease-in-out
           hover:text-amber-500"
@@ -47,7 +48,8 @@ const Lead = (): JSX.Element => (
           href="https://www.linkedin.com/in/micha%C3%ABl-breyton-a88aa146/"
           target="_blank"
           className=""
-          rel="noreferrer">
+          rel="noreferrer"
+          aria-label="My Linkedin Profile">
           <Linkedin
             className="transition duration-200 ease-in-out
           hover:text-amber-500"

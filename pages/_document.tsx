@@ -18,7 +18,7 @@ class MyDocument extends Document {
     // This will set the initial theme, saved in localstorage
 
     return (
-      <Html>
+      <Html lang="en">
         <Head />
         <body>
           <Main />

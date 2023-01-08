@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { Link } from 'lucide-react';
+import Image from 'next/image';
 import { Fade, Zoom } from 'react-awesome-reveal';
 
 interface ProjectProps {
@@ -52,10 +53,12 @@ const Project = (props: ProjectProps): JSX.Element => {
 
       <Fade fraction={0.8} triggerOnce={true} className="m-auto">
         <div className="m-auto 2xl:max-w-4xl xl:max-w-2xl max-w-xl p-5">
-          <img
+          <Image
             src={props.image}
             alt="Website presentation"
             className="shadow-md rounded-md"
+            width={800}
+            height={600}
           />
           <div className="flex mt-7 mb-5">
             <Link className="mr-2" />
